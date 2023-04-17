@@ -1,8 +1,9 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXML.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
-package test01;
+package _00_MainPackage;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -12,15 +13,17 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Mohamed
+ * @author WINDOWS 10
  */
-public class Test01 extends Application {
+public class CafeShopManagementSystem extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/_01_Login/FXMLDocument.fxml"));
         
         Scene scene = new Scene(root);
+        
+        stage.setTitle("Cafe Shop Management System");
         
         stage.setScene(scene);
         stage.show();
